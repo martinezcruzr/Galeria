@@ -12,7 +12,7 @@
   width='300px';><br> "; 
 }?></div><div class= "espacio8">
 <?php 
-session_start();error_reporting(0);
+session_start();
 move_uploaded_file($_FILES['archivo']['tmp_name'],'archivos/'.$_FILES['archivo']['name']);
 $abrirdir= scandir("archivos");
 $nombre=$_POST['nombre'];
